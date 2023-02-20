@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "../../images/module-icons/blog.svg",
+  "host_template_types" : [ "BLOG_POST" ],
+  "module_id" : 80684612717,
+  "label" : "関連記事",
+  "is_available_for_new_content" : true
+}

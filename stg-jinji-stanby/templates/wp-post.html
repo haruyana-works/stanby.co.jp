@@ -1,0 +1,43 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: Stanby - ダウンロード個別
+  screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+<div class="inner">
+  <div class="breadCrumb">
+    <ol>
+      <li><a href="/">求人掲載</a></li>
+      <li><a href="{{  blog.absolute_url }}">{{  blog.name }}</a></li>
+      <li>{{ content.name }}</li>
+    </ol>
+  </div>
+  <div class="whitepaperContent">
+    <h1>{{ content.name }}</h1>
+    <p class="whitepaperDesc">下記フォームにご記入の上、送信ください。<br class="pcBr">いただいたメールアドレス宛に資料のダウンロードURLをお送りいたします。</p>
+    <div class="whitepaperWraper">
+
+      <div class="whitepaperRow">
+        <img
+          src="{{ content.featured_image }}"
+          loading="lazy"
+          alt="{{ content.featured_image_alt_text }}"
+        >
+        <p>{{ content.meta_description }}</p>
+        <div class="whitepaperInfo">
+          {{ content.post_body }}
+        </div>
+      </div>
+
+      {% module "whitepaper-form" path="/jinji-stanby/modules/whitepaper-form", label="個別ダウンロードフォーム", no_wrapper=True  %}
+
+    </div>
+  </div>
+    {% module "stanby-cv" path="/jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
+</div>
+
+{% endblock body %}

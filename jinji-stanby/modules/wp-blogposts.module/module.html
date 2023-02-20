@@ -1,0 +1,32 @@
+
+  <div class="blogSLider swiperWp">
+    <div class="wpList swiper-wrapper">
+      
+      {% set posts = blog_recent_posts("80683292202", 6) %}
+
+      {% for post in posts %}
+      <div class="wpItem swiper-slide">
+        <a href="{{ post.absolute_url }}">
+
+          <div class="wpItemImg">
+            <img
+              src="{{ post.featured_image }}"
+              loading="lazy"
+              alt="{{ post.featured_image_alt_text }}"
+            >
+          </div>
+          <div class="wpItemContent">
+            <div class="wpItemTitle">{{ post.name }}</div>
+            <p>{{ post.meta_description }}</p>
+          </div>
+          
+        </a>
+      </div>
+      {% endfor %}
+
+     </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+

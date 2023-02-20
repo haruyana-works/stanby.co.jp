@@ -1,0 +1,25 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: Growth - blog listing
+  screenshotPath: ../images/template-previews/blog-index.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+  <div class="inner">
+    <div class="breadCrumb"><ol><li><a href="/">求人掲載</a></li><li>{{blog.name}}</li></ol></div>
+      <div class="downloadsContent">
+      <h1>{{blog.name}}</h1>
+      <p>採用や育成など、実務に役立つ資料をご用意いたしました。<br class="pcBr">簡単な入力でダウンロードいただけます。</p>
+      {% module "downloads-listing" path="/jinji-stanby/modules/downloads-listing.module"
+        %}
+      {% module "pagination" path="/jinji-stanby/modules/pagination.module"
+      %}
+
+    </div>
+    {% module "stanby-cv" path="/jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
+  </div>
+
+{% endblock body %}

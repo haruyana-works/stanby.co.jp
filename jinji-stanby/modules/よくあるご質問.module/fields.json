@@ -1,0 +1,24 @@
+[ {
+  "id" : "363373fb-bf2a-683e-56eb-43491aa2a344",
+  "name" : "question",
+  "display_width" : null,
+  "label" : "質問",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "例：スタンバイの特徴は？",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "9e2b3e97-b503-220e-fee1-a1947ff290f0",
+  "name" : "answer",
+  "display_width" : null,
+  "label" : "答え",
+  "help_text" : "",
+  "inline_help_text" : "*改行を入れることが可能です。",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext"
+} ]

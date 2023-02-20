@@ -1,0 +1,79 @@
+
+{####################################################}
+{################ Blog components ###################}
+{####################################################}
+
+{% macro post_image() %}
+    <div class="mediaItemImg">
+      <img
+        src="{{ post.featured_image }}"
+        loading="lazy"
+        alt="{{ post.featured_image_alt_text }}"
+      >
+    </div>
+{% endmacro %}
+
+{% macro post_title() %}
+     <div class="mediaItemTitle">{{ post.name }}</div>
+{% endmacro %}
+
+{% macro post_date() %}
+    <time datetime="{{ post.publish_date }}">
+      {{ post.publish_date|datetimeformat('yyyy/MM/dd') }}
+    </time>
+{% endmacro %}
+
+{% macro post_category() %}
+  {% if post.content_group != '71599126444' %}
+    <div class="mediaItemCat">
+      {% if post.content_group == '71595602751' %}
+      採用ノウハウ
+      {% elif post.content_group == '71595208335' %}
+      人事ノウハウ
+      {% endif %}
+    </div>
+  {% endif %}
+{% endmacro %}
+
+
+{% macro post_content() %}
+  <div class="mediaItem swiper-slide">
+    <a href="{{ post.absolute_url }}">
+      {{ post_image() }}
+      <div class="mediaItemContent">
+        {{ post_title() }}
+        <div class="mediaItemInfo">
+          {{ post_category() }}
+          {{ post_date() }}
+        </div>
+      </div>
+    </a>
+  </div>
+{% endmacro %}
+
+{####################################################}
+{################## Blog layout #####################}
+{####################################################}
+
+{% macro related_posts(post, count, total) %}
+  {% if count == 1 %}
+     <div class="blogSLider swiperRelated">
+      <div class="mediaList swiper-wrapper">
+  {% endif %}
+
+    {{ post_content() }}
+
+  {% if count == total %}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  {% endif %}
+{% endmacro %}
+
+
+{% related_blog_posts
+  limit="6",
+  post_formatter="related_posts",
+  no_wrapper=True
+%}

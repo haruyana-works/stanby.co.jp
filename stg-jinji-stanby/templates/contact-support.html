@@ -1,0 +1,62 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+-->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- 次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset -->
+
+<!-- パラメータを変更して、HTML ページの文字コードを指定してください。 -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+{% extends "./layouts/base.html" %}
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- 次の <FORM> 要素をページに追加してください。 -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<div class="breadCrumb"><ol><li><a href="/">TOP</a></li><li>お問い合わせ</li></ol></div>
+<div class="contactContent">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D5h000003m3Nf">
+
+<input type=hidden name="retURL" value="http://">
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- 注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。 -->
+
+<!-- <input type="hidden" name="debug" value=1> -->
+
+<!-- <input type="hidden" name="debugEmail" -->
+
+<!-- value="yuki.kinoshita@stanby.inc"> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<label for="company">会社名</label><input id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+<label for="name">取引先責任者名</label><input id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">メール</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">電話</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+お問い合わせの目的:<input id="00N5h0000098fL4" maxlength="255" name="00N5h0000098fL4" size="20" type="text" /><br>
+
+お問い合わせ内容:<textarea id="00N5h00000BfYsb" name="00N5h00000BfYsb" rows="3" type="text" wrap="soft"></textarea><br>
+
+企業ホームページ(URL):<input id="00N5h0000098e7w" maxlength="255" name="00N5h0000098e7w" size="20" type="text" /><br>
+
+求人サイト・求人ページ（URL）:<input id="00N5h0000098e81" maxlength="255" name="00N5h0000098e81" size="20" type="text" /><br>
+
+内容詳細:<textarea id="00N5h0000098e86" name="00N5h0000098e86" rows="3" type="text" wrap="soft"></textarea><br>
+
+<input type="submit" name="submit">

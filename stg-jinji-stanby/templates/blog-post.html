@@ -1,0 +1,94 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: Stanby - 記事詳細
+  screenshotPath: ../images/template-previews/blog-post.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+<div class="inner">
+  <div class="breadCrumb">
+    <ol>
+      <li><a href="/">求人掲載</a></li>
+      <li><a href="{{  blog.absolute_url }}">{{  blog.name }}</a></li>
+      <li>{{ content.name }}</li>
+    </ol>
+  </div>
+</div>
+<div class="articleContainer">
+  <div class="articleContent">
+    <div class="articleHeader">
+      <div class="articleImg">
+        <img
+          src="{{ content.featured_image }}"
+          loading="lazy"
+          alt="{{ content.featured_image_alt_text }}"
+        >
+      </div>
+      <h1>{{ content.name }}</h1>
+      <div class="mediaItemInfo">
+        <div class="mediaItemCat">{{  blog.name }}</div>
+        <time>{{ content.publish_date|datetimeformat('yyyy/MM/dd') }}</time>
+      </div>
+    </div>
+    <div class="postbody">
+      <p>
+      {{ content.meta_description }}
+      </p>
+      <p></p>
+      {% module "table-of-content" path="/jinji-stanby/modules/table-of-contents", label="目次", no_wrapper=True
+       %}
+      {{ content.post_body }}
+    </div>
+    
+    <div class="sharepost">
+      <p>この記事を共有する</p>
+        <a class="social-sharing__link" href="https://twitter.com/intent/tweet?url={{ content.absolute_url }}" target="_blank" rel="noopener">
+          <img src="{{ get_asset_url('/jinji-stanby/images/icon-twitter.svg') }}" alt="">
+        </a>
+
+        <a class="social-sharing__link" href="http://www.facebook.com/share.php?u={{ content.absolute_url }}" target="_blank" rel="noopener">
+          <img src="{{ get_asset_url('/jinji-stanby/images/icon-facebook.svg') }}" alt="">
+        </a>
+
+    </div>
+    
+    
+    {% module "author-card" path="/jinji-stanby/modules/author-card", label="執筆者", no_wrapper=True
+    %}
+    
+    {% module "supervisor-card" path="/jinji-stanby/modules/supervisor-card", label="監修者", no_wrapper=True
+    %}
+    
+  </div>
+
+  {% module "sidebar" path="/jinji-stanby/modules/sidebar.module", no_wrapper=True
+   %}
+  
+</div>
+
+{# Related posts #}
+<div class="mediaModule">
+  <h2>この記事を読んだ人はこの記事も読んでいます</h2>
+  {% module "related-posts" path="/jinji-stanby/modules/related-posts.module", label="この記事を読んだ人はこの記事も読んでいます", no_wrapper=True
+    %}
+ </div>
+<div class="mediaModule">
+  <h2>新着記事</h2>
+  {% module "recent-blogposts" path="/jinji-stanby/modules/recent-blogposts.module", label="新着記事"
+    %}
+ </div>
+
+<div class="wpModule">
+  <h2>お役立ち資料ダウンロード</h2>
+  {% module "wp-blogposts" path="/jinji-stanby/modules/wp-blogposts.module", label="お役立ち資料ダウンロード"
+    %} 
+</div>
+
+<div class="inner">
+    {% module "stanby-cv" path="/jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
+</div>
+
+{% endblock body %}

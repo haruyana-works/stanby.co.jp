@@ -1,0 +1,55 @@
+{% set all_posts_pop = [] %}
+
+{# Loop through all posts selected in the blog field #}
+{% for item in module.blogs_to_display.blogs %}
+  
+  {# Get posts for each blog #}
+  {% set posts_pop = blog_popular_posts(item, 6, "popular_past_month") %}
+
+  {# Append each post to the all_posts array #}
+  {% for post_pop in posts_pop %}
+    {% do all_posts_pop.append( post_pop ) %}
+  {% endfor %}
+
+{% endfor %}
+
+
+  <div class="blogSLider swiperPopular">
+    <div class="mediaList swiper-wrapper">
+      
+      {% for post_pop in all_posts_pop[:6]|sort(true, false, 'publish_date') %}
+      
+      <div class="mediaItem swiper-slide">
+        <a href="{{ post_pop.absolute_url }}">
+       
+          <div class="mediaItemImg">
+            <img
+              src="{{ post_pop.featured_image }}"
+              loading="lazy"
+              alt="{{ post_pop.featured_image_alt_text }}"
+            >
+          </div>
+          <div class="mediaItemContent">
+            <div class="mediaItemTitle">{{ post_pop.name }}</div>
+            <div class="mediaItemInfo">
+              <div class="mediaItemCat">
+                {% if post_pop.content_group == '71595602751' %}
+                採用ノウハウ
+                {% elif post_pop.content_group == '71595208335' %}
+                人事ノウハウ
+                {% endif %}
+              </div>
+               <time>{{post_pop.publish_date|datetimeformat('yyyy/MM/dd')}}</time>
+            </div>
+          </div>
+         </a>
+        
+
+      </div>
+      {% endfor %}
+
+     </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>

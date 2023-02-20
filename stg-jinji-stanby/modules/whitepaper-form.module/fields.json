@@ -1,0 +1,13 @@
+[ {
+  "id" : "54c4f202-b0c6-4826-d3a3-97d38c424392",
+  "name" : "pardot_form_handler_record",
+  "display_width" : null,
+  "label" : "Pardotフォームハンドラーレコード",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "ここに「Pardotフォームハンドラーレコード」をそのまま貼り付けてください。*https推奨",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

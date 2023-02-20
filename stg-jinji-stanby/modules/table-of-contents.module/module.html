@@ -1,0 +1,21 @@
+<div class="tableOfContents">
+  <p>目次</p>
+  <ul>
+    {% for item in module.tableofcontent.header %}
+      <li>
+        <a href="{{ item.anchor.href }}" rel="noopener">
+          {% inline_text field="anchor_text" value="{{ item.anchor_text }}", no_wrapper=True %}
+        </a>
+      {% for item2 in item.header_second %}
+        <ul>
+          <li>
+            <a href="{{ item2.anchor_second.href }}" rel="noopener">
+              {% inline_text field="anchor_text_second" value="{{ item2.anchor_text_second }}", no_wrapper=True %}
+            </a>
+          </li>
+        </ul>
+      {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

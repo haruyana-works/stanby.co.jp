@@ -1,0 +1,29 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+<div class="inner">
+  <div class="contactThankyou">
+    <img src="{{ get_asset_url('/jinji-stanby/images/icon-check-circle.svg') }}" alt="">
+    <h1>送信されました</h1>
+    <p>このたびは、スタンバイへお問い合わせ/資料ダウンロードのお申込みを頂戴し、ありがとうございます。<br><br>
+      ご入力いただきましたメールアドレスへメールをお送りいたしましたので、ご確認ください。<br><br>
+      お問い合わせの場合、内容を確認の上、通常3営業日以内（土日祝、年末年始を除く）に、改めてメールにてご連絡させていただきます。</p>
+    <div class="thankYouMention">
+      <p>メールが届かない場合は、下記の可能性がございます。</p>
+      <ul>
+        <li>メールアドレスが間違っている</li>
+        <li>迷惑メールフォルダに振り分けられている</li>
+        <li>ドメイン指定をされていて「@stanby.inc」からのメールが受信できない</li>
+      </ul>
+        <p>以上をご確認の上、お手数ですが、改めてお問い合わせいただきますようお願い申し上げます。</p>
+    </div>
+    <div class="toTop"><a href="/">トップページへ ></a></div>
+  </div>
+</div>
+
+{% endblock body %}

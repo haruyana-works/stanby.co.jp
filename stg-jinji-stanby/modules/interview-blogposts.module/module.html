@@ -1,0 +1,42 @@
+<div class="mediaModule">
+  <h2>お客様の声 / 採用成功事例</h2>
+  <div class="blogSLider swiperInterview">
+    <div class="mediaList swiper-wrapper">
+      
+      {% set posts = blog_recent_posts("71599126444", 6) %}
+
+      {% for post in posts %}
+      <div class="mediaItem swiper-slide">
+        <a href="{{ post.absolute_url }}">
+
+          <div class="mediaItemImg">
+            <img
+              src="{{ post.featured_image }}"
+              loading="lazy"
+              alt="{{ post.featured_image_alt_text }}"
+            >
+          </div>
+          <div class="mediaItemContent">
+            <div class="mediaItemTitle">{{ post.name }}</div>
+            <div class="mediaItemInfo">
+              <div class="mediaItemCat">
+                {% if post.content_group == '71595602751' %}
+                採用ノウハウ
+                {% elif post.content_group == '71595208335' %}
+                人事ノウハウ
+                {% endif %}
+              </div>
+               <time>{{post.publish_date|datetimeformat('yyyy/MM/dd')}}</time>
+            </div>
+          </div>
+          
+        </a>
+      </div>
+      {% endfor %}
+
+     </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+</div>

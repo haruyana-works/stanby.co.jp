@@ -1,0 +1,129 @@
+.stanbyCv {
+    padding: 64px 20px;
+    margin-bottom: 128px;
+    background: #dfd7c740;
+}
+
+.stanbyCv h2 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration-color: #ef671f80;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 10px;
+    text-underline-offset: -3px;
+}
+
+.stanbyCv h2 br {
+    display: none;
+}
+
+.stanbyCvList {
+    padding: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.stanbyCvListItem img {
+    width: 110px;
+}
+
+.stanbyCvListItem h3 {
+    font-size: 20px;
+    padding: 16px 0;
+}
+
+.stanbyCvListItem:nth-child(2) h3, .stanbyCvListItem:nth-child(3) h3 {
+    line-height: 58px;
+}
+
+.stanbyCvListItem p {
+    font-size: 14px;
+}
+
+.stanbyCvBtn {
+    margin: 0 auto;
+    height: 64px;
+    max-width: 374px;
+    border-radius: 50px;
+    background: rgb(215,39,119);
+    background: linear-gradient(90deg, rgba(215,39,119,1) 0%, rgba(239,103,31,1) 100%);
+}
+
+.stanbyCvBtn button {
+    background: none;
+    background: #d72777;
+    background: linear-gradient(90deg,#d72777,#ef671f);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 64px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.stanbyCvBtn button a {
+    display: block;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .stanbyCv h2 {
+        font-size: 25px;
+        text-decoration-thickness: 7px;
+        text-underline-offset: -1px;
+    }
+
+    .stanbyCvList {
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+    }
+
+    .stanbyCvListItem:nth-child(2) h3, .stanbyCvListItem:nth-child(3) h3 {
+        line-height: unset;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .stanbyCv h2 br {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 514px) {
+
+    .stanbyCv h2 {
+        font-size: 20px;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 0;
+    }
+
+    .stanbyCvListItem h3 {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .stanbyCvList p br {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+
+    .stanbyCv h2 br {
+        display: none;
+    }
+    
+}

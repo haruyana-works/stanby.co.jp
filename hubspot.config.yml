@@ -1,0 +1,12 @@
+defaultPortal: stanby
+portals:
+  - name: stanby
+    portalId: 21620163
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CKmcufHmMBILAA0AAAAAAEwDQAIYw8unCiC1i-0VKO7pDDIU5MUjA-zuSPzOD-zCQmj02cy4I786NwAABEEAAAB4AAAAAAAAAAAAAAAAAAAABAAAwAcAAAAAPABABgBEAGAAAAAAAAAAAAAAAAAAMAJCFJRucSdypdh5OB-JWEo6T8iGTCW3SgNuYTFSAFoA
+        expiresAt: '2023-02-20T09:36:13.866Z'
+    personalAccessKey: >-
+      CiQ3NzVkYTE3ZS01NDE1LTQzYjAtOTdkNC1mYWZhZTY2YjI1NTMQw8unChi1i-0VKhkABeaRgroYPpZ1k7U0X3sfQytT9vvAIqI8SgNuYTE

@@ -1,0 +1,35 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: Staby - 記事一覧
+  screenshotPath: ../images/template-previews/blog-index.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+  <div class="inner">
+    <div class="breadCrumb"><ol><li><a href="/">求人広告掲載</a></li><li>{{blog.name}}</li></ol></div>
+  </div>
+
+  <div class="catContainer">
+    <div class="catContent">
+      <h1>{{blog.name}}</h1>
+      <p>{{blog.description}}</p>
+      {% module "blog-listing" path="/jinji-stanby/modules/blog-listing.module", no_wrapper=True
+        %}
+
+      {% module "pagination" path="/jinji-stanby/modules/pagination.module", no_wrapper=True
+      %}
+
+    </div>
+
+      {% module "sidebar" path="/jinji-stanby/modules/sidebar.module", no_wrapper=True
+        %}
+    
+  </div>
+  <div class="inner">
+    {% module "stanby-cv" path="/jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
+  </div>
+
+{% endblock body %}

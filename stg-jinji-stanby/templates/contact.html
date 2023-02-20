@@ -1,0 +1,106 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Contact
+  screenshotPath: ../images/template-previews/contact.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+        <div class="inner">
+            <div class="breadCrumb"><ol><li><a href="/">求人掲載</a></li><li>お問い合わせ</li></ol></div>
+            <div class="contactContent">
+                <h1>お問い合わせ</h1>
+<!--              <br>
+               <div style="text-align: center"> </div>
+               <div style="text-align: center">【年末年始休業期間のご案内】</div>
+               <div style="text-align: center">誠に勝手ながら、年末年始に伴い「2022年12月29日（木）～2023年1月3日（火）」まで休業いたします。</div>
+               <div style="text-align: center">休業期間中にいただきます問い合わせにつきましては、「2023年1月4日（水）」以降、順次回答いたします。</div>
+               <div style="text-align: center">なお、通常、3営業日以内（土日祝、年末年始を除く）に、ご連絡を差し上げておりますが、</div>
+               <div style="text-align: center">年末年始休業明けのご返信には、通常よりお時間をいただく場合がございますので、</div>
+               <div style="text-align: center">あらかじめご了承いただきますようお願い申し上げます。</div>
+              <br>
+-->                <div class="contactForm">
+                      <form action="https://info.stanby.com/l/955313/2022-07-26/69lc2" method="post">
+                        <input type="hidden" name="retURL" value="https://jinji.stanby.co.jp/contact-thank-you/">
+                        <div class="formItem">
+                            <p>貴社名</p>
+                            <input name="company" type="text" required placeholder="株式会社スタンバイ">
+                        </div>
+                        <div class="formItemList">
+                            <div class="formItem">
+                                <p>姓</p>
+                                <input name="last_name" type="text" required placeholder="山田">
+                            </div>
+                            <div class="formItem">
+                                <p>名</p>
+                                <input name="first_name" type="text" required placeholder="太郎">
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <p>電話番号</p>
+                            <input name="phone" type="phone" pattern="\d{2,4}\d{2,4}\d{3,4}" required placeholder="03xxxxxxxx">
+                        </div>
+                        <div class="formItem">
+                            <p>メールアドレス</p>
+                            <input name="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="xxxx@stanby.inc">
+                        </div>
+                        <div class="formItem">
+                            <p>お問い合わせ目的</p>
+                            <select name="enquiry_purpose" id="select1" onChange="EnquirySelect()" required>
+                                <option value="">選択して下さい</option>
+                                <option value="自社の求人をスタンバイに掲載したい">自社の求人をスタンバイに掲載したい</option>
+                                <option value="運営している求人メディアの情報をスタンバイに連携したい">運営している求人メディアの情報をスタンバイに連携したい</option>
+                                <option value="派遣求人の情報をスタンバイに連携したい">派遣求人の情報をスタンバイに連携したい</option>
+                                <option value="自社以外の求人広告を掲載したい（代理店）">自社以外の求人広告を掲載したい（代理店）</option>
+                                <option value="求人情報の削除・修正をしたい">求人情報の削除・修正をしたい</option>
+                                <option value="その他のお問い合わせをしたい">その他のお問い合わせをしたい</option>
+                            </select>
+                        </div>
+                        <div class="formItem" id="formItemSelect2" style="display: none">
+                            <p>お問い合わせ内容</p>
+                            <select name="enquiry_about2" id="select2">
+                            </select>
+                        </div>
+                        <div class="formItem" id="formItemSelect3" style="display: none">
+                            <p>お問い合わせ内容</p>
+                            <select name="enquiry_about" id="select3">
+                            </select>
+                        </div>
+                        <div class="formItem" id="formItemSelect4">
+                            <p>内容詳細</p>
+                            <textarea rows="8" maxlength="140" name="enquiry_about3" type="text"></textarea>
+                        </div>
+                        <div class="formItem">
+                            <p>貴社のホームページ（URL）</p>
+                            <input name="homepage" type="text" required placeholder="https://stanby.co.jp/">
+                        </div>
+                        <div class="formItem">
+                            <p>貴社の採用ページ（URL）</p>
+                            <input name="saiyopage" type="text" required placeholder="https://recruit.stanby.co.jp/">
+                            <p class="formMention">※求人サイト・求人ページがない場合は「なし」、「求人の内容の修正・掲載停止」をご選択の場合は、該当求人URLをご記入ください。</p>
+                        </div>
+                        <div class="formItem">
+                            <p>あなたは、現在採用業務をご担当されていますか？</p>
+                            <div class="formRadio">
+                                <label>
+                                    <input type="radio" name="saiyo_gyomu" value="はい" required>
+                                    はい
+                                </label>
+                                <label>
+                                    <input type="radio" name="saiyo_gyomu" value="いいえ">
+                                    いいえ
+                                </label>
+                            </div>
+                        </div>
+                        <input class="formButton" type="submit" value="送信">
+                        <p class="formMention">
+                            ※プライバシーポリシーをお読みいただき、同意の上送信してください。<br><a href="https://jp.stanby.com/about/privacy">【プライバシーポリシーはこちら】</a><br><br> ※入力内容に間違いがないか、ご確認の上「送信」ボタンを押してください。<br>（送信ボタン押下後、入力されたメールに自動にて登録完了メールが配信されます）
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+{% endblock body %}

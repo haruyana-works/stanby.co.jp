@@ -1,0 +1,87 @@
+[ {
+  "id" : "8964c0c4-bbdf-624e-4814-c7ff28288fef",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "72eda93d-896a-f88e-20d1-0b6b5543b977",
+    "name" : "toc_display",
+    "display_width" : null,
+    "label" : "表示",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "grid", "表示する" ], [ "none", "表示しない" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "none"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "toc_display" : "none"
+  }
+}, {
+  "id" : "90456614-da10-2a52-034d-97f91fea2d43",
+  "name" : "author_name",
+  "display_width" : null,
+  "label" : "名前",
+  "help_text" : "執筆者 / 監修者の名前を入力してください。",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "例：山田太郎",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "6fbb255d-ab65-1396-57d4-bfb9415a08a6",
+  "name" : "author_title",
+  "display_width" : null,
+  "label" : "タイトル",
+  "help_text" : "執筆者 / 監修者のタイトルを入力してください。",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "例：株式会社〇〇　CEO",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "b03dab4e-47d5-5981-f513-cb966fb1ffe7",
+  "name" : "author_image",
+  "display_width" : null,
+  "label" : "写真",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "1d2c53c9-cca1-6443-c6c9-894b42ab0496",
+  "name" : "author_text",
+  "display_width" : null,
+  "label" : "紹介文",
+  "help_text" : "紹介文を入力してください。",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : ""
+} ]

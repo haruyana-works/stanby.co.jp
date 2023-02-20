@@ -1,0 +1,44 @@
+      <div class="whitepaperForm">
+          {{ module.pardot_form_handler_record }}
+          <input type="hidden" name="retURL" value="https://jinji.stanby.co.jp/contact-thank-you/">
+          <div class="formItem">
+            <p>貴社名</p>
+            <input name="company" type="text" required placeholder="株式会社スタンバイ">
+          </div>
+          <div class="formItemList">
+            <div class="formItem">
+              <p>姓</p>
+              <input name="last_name" type="text" required placeholder="山田">
+            </div>
+            <div class="formItem">
+              <p>名</p>
+              <input name="first_name" type="text" required placeholder="太郎">
+            </div>
+          </div>
+          <div class="formItem">
+            <p>電話番号</p>
+            <input name="phone" type="phone" pattern="\d{2,4}\d{2,4}\d{3,4}" required placeholder="03xxxxxxxx">
+          </div>
+          <div class="formItem">
+            <p>メールアドレス</p>
+            <input name="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="xxxx@stanby.inc">
+          </div>
+          <div class="formItem">
+            <p>貴社のホームページ（URL）</p>
+            <input name="homepage" type="text" required placeholder="https://stanby.co.jp/">
+          </div>
+          <div class="formItem">
+            <p>あなたは、現在採用業務をご担当されていますか？</p>
+            <div class="formRadio">
+              <input id="saiyo_gyomu_yes" type="radio" name="saiyo_gyomu" value="はい">
+              <label for="saiyo_gyomu_yes">はい</label>
+              <input id="saiyo_gyomu_no" type="radio" name="saiyo_gyomu" value="いいえ">
+              <label for="saiyo_gyomu_no">いいえ</label>
+            </div>
+          </div>
+          <input class="formButton" type="submit" value="送信して資料をダウンロード">
+          <p class="formMention">
+            ※プライバシーポリシーをお読みいただき、同意の上送信してください。<a href="https://jp.stanby.com/about/privacy">【プライバシーポリシーはこちら】</a>
+          </p>
+        </form>
+      </div>

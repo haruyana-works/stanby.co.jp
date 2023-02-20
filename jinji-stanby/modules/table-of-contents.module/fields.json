@@ -1,0 +1,170 @@
+[ {
+  "id" : "8964c0c4-bbdf-624e-4814-c7ff28288fef",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "72eda93d-896a-f88e-20d1-0b6b5543b977",
+    "name" : "toc_display",
+    "display_width" : null,
+    "label" : "表示",
+    "required" : false,
+    "locked" : false,
+    "display" : "radio",
+    "choices" : [ [ "block", "表示する" ], [ "none", "表示しない" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "none"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "toc_display" : "none"
+  }
+}, {
+  "id" : "0057d861-45e4-b1f7-2090-63df07d84ec1",
+  "name" : "tableofcontent",
+  "display_width" : null,
+  "label" : "目次リスト",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5949be23-9835-a502-1ce6-a5a95a1313e7",
+    "name" : "header",
+    "display_width" : null,
+    "label" : "大見出し",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "6c7c7798-fa0d-29f0-e588-ea0d1a4813a8",
+      "name" : "anchor_text",
+      "display_width" : null,
+      "label" : "アンカーテキスト",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "placeholder" : "1.会社の魅力を伝えるために大切なこと",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    }, {
+      "id" : "6a94f4c5-5585-47a7-6186-e4aef463888c",
+      "name" : "anchor",
+      "display_width" : null,
+      "label" : "アンカーリンク",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL" ],
+      "type" : "url",
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "2faa30ad-9be0-7893-3bb9-239ce0f89498",
+      "name" : "header_second",
+      "display_width" : null,
+      "label" : "小見出し",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : null
+      },
+      "children" : [ {
+        "id" : "bf42bb6c-73ef-a8ba-1374-36e84b9f314d",
+        "name" : "anchor_text_second",
+        "display_width" : null,
+        "label" : "アンカーテキスト",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "placeholder" : "1-1.競合他社と差別化できる魅力を考える",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : ""
+      }, {
+        "id" : "b12369df-6f2f-8f92-83f7-d1e3ca3ece9a",
+        "name" : "anchor_second",
+        "display_width" : null,
+        "label" : "アンカーリンク",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL" ],
+        "type" : "url",
+        "default" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "anchor_text_second" : "",
+        "anchor_second" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "anchor_text" : "",
+      "anchor" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "header_second" : {
+        "anchor_text_second" : "",
+        "anchor_second" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "header" : {
+      "anchor_text" : "",
+      "anchor" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "header_second" : {
+        "anchor_text_second" : "",
+        "anchor_second" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }
+  }
+} ]

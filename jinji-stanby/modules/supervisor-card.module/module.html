@@ -1,0 +1,15 @@
+<div class="supervisorContent" style="display:{{ module.style.toc_display }}">
+  <h3 class="author">監修者</h3>
+  {% for item in module.supervisor %}
+  <div class="supervisorCard">
+    <img src="{{ item.author_image.src }}" alt="{{ item.author_name }}">
+    <div class="authorInfo">
+      <div class="authorTitle">{{ item.author_title }}</div>
+      <div class="authorName">{{ item.author_name }}</div>
+    </div>
+    <div class="authorText">
+      <p>{{ item.author_text }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
