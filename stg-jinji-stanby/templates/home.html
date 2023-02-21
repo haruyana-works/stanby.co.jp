@@ -12,190 +12,206 @@
     <div class="inner">
       <div class="topHeroContent">
         <div class="topHeroContentText">
-          <h1>企業の求人掲載をサポート<br>求人検索エンジン「スタンバイ」に求人掲載しませんか</h1>
-          <p>国内最大級の求人検索エンジン「スタンバイ」はヤフーやLINEを傘下に持つZホールディングスとビズリーチなどを運営するVisionalの合弁会社であるスタンバイが運営。<br><br>Yahoo! JAPANユーザーへのリーチによる新たな母集団形成をお手伝いします。</p>
-          <div class="topHeroBtn">
-            <button><a href="https://jinji.stanby.co.jp/contact/">求人掲載について無料で相談</a></button>
-          </div>
+          <p class="topHeroContentCopy">企業の採用活動をサポート</p>
+          <h1>スタンバイに求人掲載で<br>新たな求職者へアプローチ</h1>
+          <p class="topHeroContentSub">ヤフーやLINEを傘下に持つZホールディングスとビズリーチなどを運営するVisionalの合弁会社であるスタンバイは、700万人超のユーザーを持ち、貴社の新たな母集団形成をお手伝いします。</p>
         </div>
         <div class="topHeroContentImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/hero.png') }}" alt="求人掲載後のスタンバイ利用イメージ">
+          <img src="{{ get_asset_url('/stg-jinji-stanby/images/hero_device.png') }}" alt="求人掲載後のスタンバイ利用イメージ">
         </div>
       </div>
+      <ul class="topHeroBtnArea">
+        <li class="topHeroBtn topHeroBtn1">
+          <button><a href="https://jinji.stanby.co.jp/downloads/"><span class="small">詳しくサービス内容を見てみたい方は</span>説明資料をダウンロード</a></button>
+        </li>
+        <li class="topHeroBtn topHeroBtn2">
+          <button><a href="https://jinji.stanby.co.jp/contact/"><span class="small">サービスご利用をご検討の方は</span>求人掲載について無料で相談</a></button>
+        </li>
+      </ul>
     </div>
   </section>
-  <section class="topMedia">
-    <div class="mediaModule">
-      <h2>お役立ち情報 - 新着記事</h2>
-        {% module "recent-blogposts" path="/jinji-stanby/modules/recent-blogposts.module", no_wrapper=True
-        %}
-    </div>
-    <div class="mediaModule">
-      <h2>お役立ち情報 - 人気記事</h2>
-        {% module "popular-blogposts" path="/jinji-stanby/modules/popular-blogposts.module", no_wrapper=True
-        %}
-    </div>
-    <div class="wpModule">
-      <h2>お役立ち資料ダウンロード</h2>
-        {% module "wp-blogposts" path="/jinji-stanby/modules/wp-blogposts.module", no_wrapper=True
-        %}
-    </div>
+  <section class="topAbout">
     <div class="inner">
-      <div class="catModule">
-        <h2>カテゴリー別記事一覧</h2>
-        <div class="catList">
-          <div class="catItem"><a href="https://jinji.stanby.co.jp/saiyou-knowhow/">採用ノウハウ</a></div>
-          <div class="catItem"><a href="https://jinji.stanby.co.jp/jinji-knowhow/">人事ノウハウ</a></div>
-          <div class="catItem"><a href="https://jinji.stanby.co.jp/interview/">お客様の声 / 採用成功事例</a></div>
-        </div>
-      </div>
-      <div class="topCta">
-        <a href="https://jinji.stanby.co.jp/contact/">
-          <img class="bnr_pc" src="{{ get_asset_url('/jinji-stanby/images/bnr1_pc.png') }}" alt="">
-          <img class="bnr_tablet" src="{{ get_asset_url('/jinji-stanby/images/bnr1_tablet.png') }}" alt="">
-          <img class="bnr_sp" src="{{ get_asset_url('/jinji-stanby/images/bnr1_sp.png') }}" alt="">
-        </a>
-      </div>
+      <h2 class="topAboutHeading">スタンバイとは</h2>
+      <p class="topAboutLead"><em>700万人超のユーザーが利用する</em>国内最大級の求人検索エンジン「スタンバイ」は、<br>貴社の新たな母集団形成をお手伝いします。</p>
+      <p class="text">ヤフーやLINEを傘下に持つZホールディングスとビズリーチなどを運営するVisionalの合併会社「スタンバイ」は、求人情報に特化した検索エンジンです。エリアや職種、雇用形態などを指定して検索することで、ネット上の求人情報が検索結果に表示されるため、多くの求職者に活用いただいております。 </p>
+      <ol class="topAboutFlow">
+        <li class="topAboutFlowItem">
+          <div class="border"><img src="{{ get_asset_url('/stg-jinji-stanby/images/icon_about01.svg') }}" alt="" class="icon"></div>
+          <p>ネット上に<br>公開されている求人情報</p>
+        </li>
+        <li class="topAboutFlowItem">
+          <div class="border"><span class="logo"><img src="{{ get_asset_url('/stg-jinji-stanby/images/stanbyLogo.svg') }}" alt="株式会社スタンバイ"></span></div>
+          <p><em>多くのサイトから横断</em>して<br><em>求人情報を収集</em></p>
+        </li>
+        <li class="topAboutFlowItem">
+          <div class="">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/icon_about02.svg') }}" alt="" class="icon">
+            <p>スタンバイの検索結果に<br><em>求人情報を掲載</em></p>
+          </div>
+          <div class="">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/icon_about03.svg') }}" alt="" class="icon">
+            <p><em>ヤフーの検索画面にも表示</em>され、<br>多くのユーザーの目に留まります</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
   <section class="topPoint">
-    <div class="topSectionTitle">
-      <h2>全国の採用担当者様にスタンバイが<br class="spBr">選ばれるポイント</h2>
-    </div>
     <div class="inner">
-      <div class="topPointList">
-        <div class="topPointItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topPointItemImg01.svg') }}" alt="">
-        </div>
-        <div class="topPointItemContent pointOne">
-          <h3>新たな母集団形成<br>「Yahoo! JAPAN」ユーザーにリーチ</h3>
-          <p>他の求人サービスではリーチしづらいYahoo! JAPANユーザーにリーチすることができます。Yahoo! JAPANのトップページにスタンバイへの導線があるためYahoo! JAPANユーザーの流入が見込めます。また、Yahoo! JAPANの検索結果上位に貴社の求人広告を表示できるクリック課金型の「広告枠」もご用意しています。</p>
-        </div>
+      <div class="topSectionTitle">
+        <h2 data-heading2="point">スタンバイが選ばれる<br><em>３つのポイント</em></h2>
       </div>
-      <div class="topPointList">
-        <div class="topPointItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topPointItemImg02.svg') }}" alt="">
-        </div>
-        <div class="topPointItemContent pointTwo">
-          <h3>採用コスト削減<br>クリック課金で効率よく求職者にアプローチ</h3>
-          <p>スタンバイへの求人掲載はクリック課金型のため求人票を閲覧されて初めて費用が発生します。応募や採用時に成功報酬はいただきません。「多くの人材からの応募がほしい」「採用を急いでいる」といった場合は、クリック課金型の有料プランを利用することで、より効果的に求職者に見つけてもらうことができます。</p>
-        </div>
+      <ol class="topPointList">
+        <li class="topPointListItem">
+          <div class="topPointListTitle">
+            <h3><span>Point<span>01</span></span>新たな求職者にアプローチ</h3>
+          </div>
+          <div class="topPointListImg">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point01.svg') }}" alt="Yahoo! JAPAN">
+          </div>
+          <div class="topPointListText">
+            <p class="text">「Yahoo! JAPAN」ユーザーにリーチでき、新たな母集団形成を実現</p>
+          </div>
+        </li>
+        <li class="topPointListItem">
+          <div class="topPointListTitle">
+            <h3><span>Point<span>02</span></span>安心のクリック課金</h3>
+          </div>
+          <div class="topPointListImg">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point02.svg') }}" alt="求人情報">
+          </div>
+          <div class="topPointListText">
+            <p class="text">クリック課金型なので、効率よく求職者にアプローチ</p>
+          </div>
+        </li>
+        <li class="topPointListItem">
+          <div class="topPointListTitle">
+            <h3><span>Point<span>03</span></span>管理工数の削減</h3>
+          </div>
+          <div class="topPointListImg">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point03.svg') }}" alt="採用サイト">
+          </div>
+          <div class="topPointListText">
+            <p class="text">貴社採用サイトとの連携で、手間なく掲載開始・管理が可能</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="topPointTitle">
+        <h3><span>Point<span>01</span></span><em>新たな求職者にアプローチ</em></h3>
       </div>
-      <div class="topPointList">
-        <div class="topPointItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topPointItemImg03.svg') }}" alt="">
-        </div>
-        <div class="topPointItemContent pointThree">
-          <h3>管理も手間なし<br>貴社採用サイトとの連携で出稿や応募者を一元管理</h3>
-          <p>貴社採用サイトの連携申込みをするだけで即時の有料出稿が可能です。採用サイトにある求人の中から有料出稿と無料出稿の選択ができるため、採用状況に応じて有料 / 無料を切り替えられます。応募者は貴社の採用サイトに応募するため、応募者管理の手間も増えません。</p>
-        </div>
-      </div>
-      <div class="topCta">
-        <a href="https://jinji.stanby.co.jp/contact/">
-          <img class="bnr_pc" src="{{ get_asset_url('/jinji-stanby/images/bnr1_pc.png') }}" alt="">
-          <img class="bnr_tablet" src="{{ get_asset_url('/jinji-stanby/images/bnr1_tablet.png') }}" alt="">
-          <img class="bnr_sp" src="{{ get_asset_url('/jinji-stanby/images/bnr1_sp.png') }}" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="topService">
-    <div class="topSectionTitle">
-      <h2>多様な雇用形態、業種、職種への<br class="spBr">アプローチにより<br class="pcBr">貴社の<br class="spBr">採用課題に対応</h2>
-      <p>求人検索エンジンとして全国のさまざまな求人情報を集約しており、<br class="tabletBr">幅広い層の求職者へアプローチできます。</p>
-    </div>
-    <div class="inner">
-      <div class="topServiceItem">
-        <div class="topServiceItemContent">
-          <h3>今必要な雇用形態を募集</h3>
-          <p>アルバイト・パート、正社員、派遣社員、業務委託など幅広い雇用形態に対応しています。</p>
-          <p>貴社の採用戦略に必要な雇用形態の人材募集を実現できます。</p>
-        </div>
-        <div class="topServiceItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topServiceOne.png') }}" alt="">
-        </div>
-      </div>
-      <div class="topServiceItem">
-        <div class="topServiceItemContent">
-          <h3>多様な業種、職種へも対応</h3>
-          <p>業種や職種にも各種対応しています。</p>
-          <p>貴社の業種や、採用したい職種の求人広告の掲載が可能です。</p>
-        </div>
-        <div class="topServiceItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topServiceTwo.png') }}" alt="">
-        </div>
-      </div>
-      <div class="topServiceItem">
-        <div class="topServiceItemContent">
-          <h3>幅広い年齢層や属性にアプローチ</h3>
-          <p>若年層からシニア層まで幅広いユーザーにご利用いただいています。 </p>
-          <p>新卒、第二新卒、ベテラン、学生、主婦、シニアなど、貴社がアプローチしたい人材に向けた採用活動ができます。</p>
-        </div>
-        <div class="topServiceItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topServiceThree.png') }}" alt="">
-        </div>
-      </div>
-      <div class="topServiceItem">
-        <div class="topServiceItemContent">
-          <h3>全国どこでも人材募集が可能</h3>
-          <p>全国に膨大なユーザーを抱えるYahoo! JAPANと連携しているため、北海道から沖縄まで日本全国の勤務地に対応しています。</p>
-        </div>
-        <div class="topServiceItemImg">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topServiceFour.png') }}" alt="">
-        </div>
-      </div>
-      <div class="topCta">
-        <a href="https://jinji.stanby.co.jp/contact/">
-          <img class="bnr_pc" src="{{ get_asset_url('/jinji-stanby/images/bnr1_pc.png') }}" alt="">
-          <img class="bnr_tablet" src="{{ get_asset_url('/jinji-stanby/images/bnr1_tablet.png') }}" alt="">
-          <img class="bnr_sp" src="{{ get_asset_url('/jinji-stanby/images/bnr1_sp.png') }}" alt="">
-        </a>
-      </div>                
-    </div>
-  </section>
-  <section class="topFeature">
-    <div class="inner">
-      <h2>クリック課金型「広告枠」</h2>
-      <p>貴社採用サイトにある求人から、「広告枠」に掲載したい求人を選んで配信する有料プランです。</p>
-      <div class="topFeatureList">
-        <div class="topFeatureItem">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topFeatureItemImg01.svg') }}" alt="">
-          <div class="topFeatureItemContent">
-            <h3>求職者に届きやすい</h3>
-            <p>「広告枠」は求人検索結果の上位に表示されるなど、無料枠では表示されないユーザーの目に留まりやすい場所に表示されるため、求職者に効率的にアプローチできます。</p>
+      <p class="text">スタンバイは700万人超のユーザーが利用しています。<br>全国の多様な世代や雇用形態の求職者へのアプローチにより貴社の採用課題に対応いたします。また、Yahoo! JAPANのトップページにあるスタンバイへの導線や、Yahoo! JAPANの検索結果上位に求人広告を表示できるクリック課金型の「広告枠」により、他の求人サービスではリーチしづらいYahoo!  JAPANユーザーにリーチすることができます。</p>
+      <div class="topPointBg">
+        <div class="topPointColumn">
+          <div class="topPointColumnItem">
+            <h3><em>幅広い</em>年齢層や属性にアプローチ</h3>
+            <p class="text">若年層からシニア層まで幅広いユーザーにご利用いただいています。<br>新卒、第二新卒、ベテラン、学生、主婦、シニアなど、貴社がアプローチしたい人材に向けた採用活動ができます。</p>
+          </div>
+          <div class="topPointColumnItem">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point_item01.svg') }}" alt="幅広い年齢層や属性にアプローチ">
           </div>
         </div>
-        <div class="topFeatureItem">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topFeatureItemImg02.svg') }}" alt="">
-          <div class="topFeatureItemContent">
-            <h3>安心のクリック課金型</h3>
-            <p>求人広告のクリックに対して費用が発生するので、ユーザーにクリックされなければ費用はかかりません。</p>
+        <div class="topPointColumn">
+          <div class="topPointColumnItem">
+            <h3><em>全国どこでも</em>人材募集が可能</h3>
+            <p class="text">全国に膨大なユーザーを抱えるYahoo! JAPANと連携しているため、北海道から沖縄まで日本全国の勤務地に対応しています。</p>
+          </div>
+          <div class="topPointColumnItem">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point_item02.svg') }}" alt="全国どこでも人材募集が可能">
           </div>
         </div>
-        <div class="topFeatureItem">
-          <img src="{{ get_asset_url('/jinji-stanby/images/topFeatureItemImg03.svg') }}" alt="">
-          <div class="topFeatureItemContent">
-            <h3>自由度の高い料金設定</h3>
-            <p>表示順位に影響のあるクリック単価を、20円以上(雇用形態により異なる)で自由に設定できます。また、1日ごとや月間の上限予算を設定できるので予算超過を防止できます。</p>
+        <div class="topPointColumn">
+          <div class="topPointColumnItem">
+            <h3><em>今必要な</em>雇用形態を募集</h3>
+            <p class="text">アルバイト・パート、正社員、派遣社員、業務委託など幅広い雇用形態に対応しています。<br>貴社の採用戦略に必要な雇用形態の人材募集を実現できます。</p>
+          </div>
+          <div class="topPointColumnItem">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point_item03.svg') }}" alt="今必要な雇用形態を募集">
           </div>
         </div>
       </div>
+
+      <div class="topPointTitle">
+        <h3><span>Point<span>02</span></span><em>安心のクリック課金</em></h3>
+      </div>
+      <p class="text">スタンバイへの求人掲載はクリック課金型のため、求人票を閲覧されて初めて費用が発生します。<br>応募や採用時に成功報酬はいただきません。少額からでも効率的に求職者にアプローチできます。</p>
+      <div class="topPointBg col3">
+        <div class="topPointColumn3">
+          <div class="topPointColumnItem">
+            <h3 class="border">掲載料金・初期費用<em>無料</em></h3>
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point2_item01.png') }}" alt="掲載料金・初期費用無料">
+            <p class="text">掲載のご相談、アカウント作成、掲載では料金は発生しないため、気軽に始められます。</p>
+          </div>
+          <div class="topPointColumnItem">
+            <h3 class="border">1クリック<em>20円〜</em></h3>
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point2_item02.png') }}" alt="1クリック20円〜">
+            <p class="text">求人票をクリック、閲覧されて初めて料金が発生します。<small>※掲載する求人の雇用形態によって、下限クリック単価は異なりますのでお問い合わせ時にご確認ください。</small></p>
+          </div>
+          <div class="topPointColumnItem">
+            <h3 class="border"><em>上限設定</em>が可能</h3>
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point2_item03.png') }}" alt="上限設定が可能">
+            <p class="text">広告配信は日ごと、月ごとの上限額設定ができます。貴社のご予算や採用計画に応じた設定が可能です。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="topPointTitle">
+        <h3><span>Point<span>03</span></span><em>管理工数の削減</em></h3>
+      </div>
+      <p class="text">貴社採用ページ、求人票をスタンバイにシステム連携させることで、手間なく求人掲載の開始、応募者の一元管理が可能です。</p>
+      <div class="topPointBg col3">
+        <div class="topPointColumn3">
+          <div class="topPointColumnItem">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point3_item01.svg') }}" alt="求人票" class="icon">
+            <h3 class="center">求人票の作成が<em>不要</em></h3>
+            <p class="text">お申し込みと同時に貴社の採用サイトに連携されるので、求人票を新たに作成する必要がありません。</p>
+          </div>
+          <div class="topPointColumnItem">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point3_item02.svg') }}" alt="ON/OFF" class="icon">
+            <h3 class="center">掲載設定の操作も<em>簡単</em></h3>
+            <p class="text">採用状況に応じて、求人票の有料/無料の切り替えがボタン一つで変更できます。</p>
+          </div>
+          <div class="topPointColumnItem">
+            <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_point3_item03.svg') }}" alt="応募者を一元管理" class="icon">
+            <h3 class="center">応募者を<em>一元管理</em></h3>
+            <p class="text">応募者は貴社採用サイトに応募するので応募者を一元管理できます。</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <section class="topCta bg">
+    <div class="inner">
+      <div class="topCtaWrapper">
+        <h2 class="topCtaHeading">CONTACT</h2>
+        <p class="text center">導入に関して本格的にご相談されたい方から、まずはサービス内容の確認をされたい方までお気軽にお問い合わせください。</p>
+        <ul class="topHeroBtnArea">
+          <li class="topHeroBtn topHeroBtn1">
+            <button><a href="https://jinji.stanby.co.jp/downloads">説明資料をダウンロード</a></button>
+          </li>
+          <li class="topHeroBtn topHeroBtn2">
+            <button><a href="https://jinji.stanby.co.jp/contact">求人掲載について無料で相談</a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="topComparison">
-    <div class="topSectionTitle">
-      <h2>他サービスとの比較</h2>
-      <p>スタンバイと他サービスの違い(特徴）を比較</p>
-    </div>
     <div class="inner">
-      <p class="comparisonDesc">スタンバイのサービスは、求人サイトや人材紹介とは仕組みが異なります。<br> 求人サイトのように掲載料は発生しません。また、人材紹介のように成果報酬料もいただいておりません。<br> 他の人材サービスとの特徴の違いは、以下の比較表でご確認ください。</p>
+      <div class="topSectionTitle">
+        <h2 data-heading2="Service">他サービスとの比較</h2>
+      </div>
+      <p class="text center">スタンバイのサービスは、求人サイトや人材紹介とは仕組みが異なります。<br>求人サイトのように掲載料は発生しません。また、人材紹介のように成果報酬料もいただいておりません。<br>他の人材サービスとの特徴の違いは、以下の比較表でご確認ください。</p>
       <table cellspacing="2">
         <thead>
           <tr>
             <th></th>
-            <th class="tableStanby"><img src="{{ get_asset_url('/jinji-stanby/images/stanbyLogo.svg') }}" alt=""></th>
-            <th class="tableCompetitor">求人<br>サイト</th>
-            <th class="tableCompetitor">人材紹介<br>サイト</th>
+            <th class="tableStanby"><img src="{{ get_asset_url('/jinji-stanby/images/stanbyLogo.svg') }}" alt="株式会社スタンバイ"></th>
+            <th class="tableCompetitor">求人サイト</th>
+            <th class="tableCompetitor">人材紹介サイト</th>
           </tr>
         </thead>
         <tr>
@@ -214,7 +230,7 @@
           <td>採用成功報酬</td>
           <td class="tableStanby"><span class="tableStanbyTitle">無料</span>クリックされた場合のみ料金が発生します。</td>
           <td class="tableCompetitor">サービスによっては必要</td>
-          <td class="tableCompetitor">無料</td>
+          <td class="tableCompetitor">必要</td>
         </tr>
         <tr>
           <td>広告掲載期間</td>
@@ -224,59 +240,172 @@
         </tr>
         <tr>
           <td>掲載工数</td>
-          <td class="tableStanby"><span class="tableStanbyTitle">少</span>貴社の採用サイトとスタンバイを連携し、有料 / 無料出稿を選択するだけ。<br>原稿作成は不要です。<br>応募者管理も貴社の採用サイトに集約できます。</td>
+          <td class="tableStanby"><span class="tableStanbyTitle">少</span>貴社の採用サイトとスタンバイを連携し、有料 / 無料出稿を選択するだけ。原稿作成は不要です。応募者管理も貴社の採用サイトに集約できます。</td>
           <td class="tableCompetitor">多</td>
           <td class="tableCompetitor">少</td>
         </tr>
         <tr>
           <td>採用ノウハウ</td>
           <td class="tableStanby"><span class="tableStanbyTitle">貴社に蓄積</span>採用担当者様が効果レポートの確認、分析が可能なため、ノウハウが蓄積できます。</td>
-          <td class="tableCompetitor">求人サイトに依存</td>
-          <td class="tableCompetitor">紹介会社に依存</td>
+          <td class="tableCompetitor">求人サイトに蓄積</td>
+          <td class="tableCompetitor">紹介会社に蓄積</td>
         </tr>
       </table>
       <div class="comparisonBtn">
-        <button><a href="https://jinji.stanby.co.jp/contact/">サービスの詳細をお問い合わせ</a></button>
-      </div>
-    </div>
-  </section>
-  <section class="topJirei">
-    <div class="topSectionTitle">
-      <h2>スタンバイご活用企業様の<br class="spBr">採用成功事例</h2>
-      <p>採用担当者様にスタンバイ活用による成果を実感いただいております。</p>
-    </div>
-  {% module "interview-blogposts" path="/jinji-stanby/modules/interview-blogposts.module", no_wrapper=True
-  %}
-    <div class="inner">
-      <div class="topCta">
-        <a href="https://jinji.stanby.co.jp/contact/">
-          <img class="bnr_pc" src="{{ get_asset_url('/jinji-stanby/images/bnr1_pc.png') }}" alt="">
-          <img class="bnr_tablet" src="{{ get_asset_url('/jinji-stanby/images/bnr1_tablet.png') }}" alt="">
-          <img class="bnr_sp" src="{{ get_asset_url('/jinji-stanby/images/bnr1_sp.png') }}" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="topFaq">
-    <div class="topSectionTitle">
-      <h2>よくある質問</h2>
-    </div>
-    <div class="inner">
-      <div class="topFaqList">
-       {% dnd_area "dnd_area"
-          label="Main section"
-        %}
-        {% end_dnd_area %}
-      </div>
-      <h2 class="topLastCall">求人検索エンジン「スタンバイ」に求人広告を掲載</h2>
-      <div class="topCta">
-        <a href="https://jinji.stanby.co.jp/contact/">
-          <img class="bnr_pc" src="{{ get_asset_url('/jinji-stanby/images/bnr1_pc.png') }}" alt="">
-          <img class="bnr_tablet" src="{{ get_asset_url('/jinji-stanby/images/bnr1_tablet.png') }}" alt="">
-          <img class="bnr_sp" src="{{ get_asset_url('/jinji-stanby/images/bnr1_sp.png') }}" alt="">
-        </a>
+        <button><a href="https://jinji.stanby.co.jp/contact/">有料オプションの詳細を確認</a></button>
       </div>
     </div>
   </section>
 
+  <section class="topCase">
+    <div class="inner">
+      <div class="topSectionTitle">
+        <h2 data-heading2="VOICE">お客様の声 / 採用成功事例</h2>
+      </div>
+      <p class="text center">スタンバイをご活用いただいているお客様の声・採用成功事例をご紹介します。</p>
+      <div class="topCaseColumn">
+        <div class="topCaseColumnImage">
+          <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_case01.jpg') }}" alt="株式会社西松屋チェーン様">
+        </div>
+        <div class="topCaseColumnText">
+          <p class="text">株式会社西松屋チェーン様</p>
+          <h3 class="topCaseHeading">スタンバイを通じてYahoo! JAPANユーザーへリーチ、採用ターゲットである30～40代の採用に貢献</h3>
+          <p class="text">衣料品を中心としたベビー・子どものくらし用品販売の全国チェーンを展開する西松屋様は、採用ターゲット層である30～40代へのリーチ拡大を狙い、同年代のユーザーを多く持つYahoo! JAPANと連携するスタンバイを導入。その結果、「スタンバイ経由の30代応募者の採用率は非常に高い」と成果を実感いただいております。</p>
+        </div>
+      </div>
+      <div class="topCaseColumn">
+        <div class="topCaseColumnImage">
+          <img src="{{ get_asset_url('/stg-jinji-stanby/images/img_case02.jpg') }}" alt="株式会社キッズコーポレーション様">
+        </div>
+        <div class="topCaseColumnText">
+          <p class="text">株式会社キッズコーポレーション様</p>
+          <h3 class="topCaseHeading">スタンバイ導入で採用コストを抑制に寄与</h3>
+          <p class="text">全国で保育園施設を運営しているキッズコーポレーション様は、採用コストを抑えながら求める人材を確保したいという方針のもと、安価で効果のある採用手法や媒体を模索。そのひとつとして、スタンバイを選定いただきました。運用いただいた成果として、スタンバイ経由の採用率は、その他の経由と比較し5ポイント程度高い結果を出しています。</p>
+        </div>
+      </div>
+      <div class="textBtn">
+        <a href="https://jinji.stanby.co.jp/interview">インタビューをすべて見る</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow" class="topFlow">
+    <div class="inner">
+      <div class="topFlowBg">
+        <div class="topSectionTitle">
+          <h2 data-heading2="FLOW">求人掲載までの流れ</h2>
+        </div>
+        <p class="text center">スタンバイはお申し込み完了と同時に貴社採用サイトと連携されるので、求人票を新たに作成する必要がありません。<br>有料配信も画面案内に沿って簡単に設定いただけます。</p>
+        <ol class="topFlowList">
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow01.svg') }}" alt="">
+              お問い合わせ
+            </h3>
+            <p class="text"><a href="" class="link">お問い合わせフォーム</a>よりお問い合わせください。</p>
+          </li>
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow02.svg') }}" alt="">
+              必要事項の確認
+            </h3>
+            <p class="text">お問い合わせ内容に即して担当者よりご連絡いたします。貴社採用サイトのURLを共有いただき、弊社より必要事項の確認をさせていただきます。</p>
+          </li>
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow03.svg') }}" alt="">
+              採用サイトの審査
+            </h3>
+            <p class="text">確認させていただいた内容を弊社内で審査いたします。</p>
+          </li>
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow04.svg') }}" alt="">
+              申込書のご提出
+            </h3>
+            <p class="text">審査完了後、弊社より申込書をお送りいたします。ご予算とその他必要事項をご記入後ご提出ください。</p>
+          </li>
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow05.svg') }}" alt="">
+              アカウント発行
+            </h3>
+            <p class="text">申し込み内容を確認でき次第、貴社の採用ページ、求人票を弊社システムに連携し、アカウントを発行いたします。</p>
+          </li>
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow06.svg') }}" alt="">
+              有料配信設定
+            </h3>
+            <p class="text">アカウントより有料配信の設定をお願い致します。</p>
+          </li>
+          <li class="topFlowListItem">
+            <h3>
+              <img src="{{ get_asset_url('/stg-jinji-stanby/images/ico_flow07.svg') }}" alt="">
+              掲載開始
+            </h3>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section class="topFaq">
+    <div class="inner">
+      <div class="topSectionTitle">
+        <h2 data-heading2="Q&A">よくあるご質問</h2>
+      </div>
+      <div class="topFaqList">
+        {% dnd_area "dnd_area"
+          label="Main section"
+        %}
+        {% end_dnd_area %}
+      </div>
+    </div>
+  </section>
+  <section class="topMedia">
+    <div class="topSectionTitle">
+      <h2 data-heading2="ARTICLE">お役立ち記事</h2>
+    </div>
+    <div class="mediaModule">
+      <h3>お役立ち情報 - 新着記事</h3>
+        {% module "recent-blogposts" path="/jinji-stanby/modules/recent-blogposts.module", no_wrapper=True
+        %}
+    </div>
+    <div class="mediaModule">
+      <h3>お役立ち情報 - 人気記事</h3>
+        {% module "popular-blogposts" path="/jinji-stanby/modules/popular-blogposts.module", no_wrapper=True
+        %}
+    </div>
+    <div class="wpModule">
+      <h3>お役立ち資料ダウンロード</h3>
+        {% module "wp-blogposts" path="/jinji-stanby/modules/wp-blogposts.module", no_wrapper=True
+        %}
+    </div>
+    <div class="inner">
+      <div class="catModule">
+        <h3>カテゴリー別記事一覧</h3>
+        <div class="catList">
+          <div class="catItem"><a href="https://jinji.stanby.co.jp/saiyou-knowhow/">採用ノウハウ</a></div>
+          <div class="catItem"><a href="https://jinji.stanby.co.jp/jinji-knowhow/">人事ノウハウ</a></div>
+          <div class="catItem"><a href="https://jinji.stanby.co.jp/interview/">お客様の声 / 採用成功事例</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="topCta">
+    <div class="inner">
+      <div class="topCtaWrapper">
+        <h2 class="topCtaHeading">CONTACT</h2>
+        <p class="text center">導入に関して本格的にご相談されたい方から、まずはサービス内容の確認をされたい方までお気軽にお問い合わせください。</p>
+        <ul class="topHeroBtnArea">
+          <li class="topHeroBtn topHeroBtn1">
+            <button><a href="https://jinji.stanby.co.jp/downloads">説明資料をダウンロード</a></button>
+          </li>
+          <li class="topHeroBtn topHeroBtn2">
+            <button><a href="https://jinji.stanby.co.jp/contact">求人掲載について無料で相談</a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 {% endblock body %}
