@@ -4,7 +4,7 @@
 {% for item in module.blogs_to_display.blogs %}
   
   {# Get posts for each blog #}
-  {% set posts_pop = blog_popular_posts(item, 6, "popular_past_month") %}
+  {% set posts_pop = blog_popular_posts(item, 10, "popular_past_month") %}
 
   {# Append each post to the all_posts array #}
   {% for post_pop in posts_pop %}
@@ -17,7 +17,7 @@
   <div class="blogSLider swiperPopular">
     <div class="mediaList swiper-wrapper">
       
-      {% for post_pop in all_posts_pop[:6]|sort(true, false, 'publish_date') %}
+      {% for post_pop in all_posts_pop[:10]|sort(true, false, 'publish_date') %}
       
       <div class="mediaItem swiper-slide">
         <a href="{{ post_pop.absolute_url }}">

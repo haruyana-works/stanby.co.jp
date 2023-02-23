@@ -1,35 +1,55 @@
 <div id="sidebar">
-  <h3>お役立ち資料ダウンロード</h3>
-  <div class="sidebarContent">
-    <div class="sidebarWp">
-      <div class="sidebarWpList">
-       {% set posts = blog_recent_posts("80683292202", 3) %}
-
-        {% for post in posts %}
-        <div class="wpItem">
-          <a href="{{ post.absolute_url }}">
-
-            <div class="wpItemImg">
-              <img
-                src="{{ post.featured_image }}"
-                loading="lazy"
-                alt="{{ post.featured_image_alt_text }}"
-              >
-            </div>
-            <div class="wpItemContent">
-              <div class="wpItemTitle">{{ post.name }}</div>
-              <p>{{ post.meta_description }}</p>
-            </div>
-
-          </a>
+  <div class="sidebarInner">
+    <h3 class="icon iconStanby">スタンバイ説明資料</h3>
+    <div class="sidebarContent">
+      <div class="sidebarWp">
+        <div class="sidebarWpList">
+          <div class="wpItem">
+            <a href="https://jinji.stanby.co.jp/downloads/23021">
+              <div class="wpItemImg">
+                <img src="https://jinji.stanby.co.jp/hubfs/%E8%A1%A8%E7%B4%99%E7%94%BB%E5%83%8F-1.png" loading="lazy" alt="スタンバイ説明資料">
+              </div>
+              <div class="wpItemContent">
+                <div class="wpItemTitle">スタンバイ説明資料</div>
+                <p>スタンバイのサービス内容を詳しく知りたい方のためのサービス概要資料です。</p>
+              </div>
+            </a>
+          </div>
         </div>
-        {% endfor %}
-
+      </div>
+      <div class="sidebarBtnList">
+        <button class="sidebarWpBtn"><a href="https://jinji.stanby.co.jp/contact">求人掲載について無料で相談</a></button>
       </div>
     </div>
-    <div class="sidebarBtnList">
-      <button class="sidebarWpBtn"><a href="https://jinji.stanby.co.jp/downloads/">お役立ち資料ダウンロード</a></button>
-      <button class="sidebarContactBtn"><a href="https://jinji.stanby.co.jp/contact/">お問い合わせ</a></button>
+  </div>
+  <div class="sidebarInner">
+    <h3 class="icon iconDownload">お役立ち資料ダウンロード</h3>
+    <div class="sidebarContent">
+      <div class="sidebarWp">
+        <div class="sidebarWpList">
+          {% set posts = blog_recent_posts("80683292202", 3) %}
+          {% for post in posts %}
+          <div class="wpItem">
+            <a href="{{ post.absolute_url }}">
+              <div class="wpItemImg">
+                <img
+                  src="{{ post.featured_image }}"
+                  loading="lazy"
+                  alt="{{ post.featured_image_alt_text }}"
+                >
+              </div>
+              <div class="wpItemContent">
+                <div class="wpItemTitle">{{ post.name }}</div>
+                <p>{{ post.meta_description }}</p>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="textBtn">
+      <a href="https://jinji.stanby.co.jp/downloads">一覧へ</a>
     </div>
   </div>
 </div>

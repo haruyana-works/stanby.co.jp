@@ -7,7 +7,6 @@
 {% extends "./layouts/base.html" %}
 
 {% block body %}
-
 <div class="inner">
   <div class="breadCrumb">
     <ol>
@@ -64,7 +63,7 @@
     
   </div>
 
-  {% module "sidebar" path="/jinji-stanby/modules/sidebar.module", no_wrapper=True
+  {% module "sidebar" path="/stg-jinji-stanby/modules/sidebar.module" %}
    %}
   
 </div>
@@ -87,8 +86,6 @@
     %} 
 </div>
 
-<div class="inner">
-    {% module "stanby-cv" path="/jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
-</div>
+  {% module "stanby-cv" path="/stg-jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
 
 {% endblock body %}

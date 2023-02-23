@@ -7,16 +7,16 @@
 {% extends "./layouts/base.html" %}
 
 {% block body %}
-
   <div class="inner">
     <div class="breadCrumb"><ol><li><a href="/">求人掲載</a></li><li>{{blog.name}}</li></ol></div>
   </div>
 
   <div class="catContainer">
     <div class="catContent">
-      <h1>{{blog.name}}</h1>
-      <p>{{blog.description}}</p>
-
+      <!-- <h1>{{blog.name}}</h1>
+      <p>{{blog.description}}</p> -->
+      <h1>お客様の声 / 成功事例</h1>
+      <p>スタンバイをご利用いただいたお客様のインタビューをご紹介いたします。求人検索エンジン「スタンバイ」に求人掲載し、新たな求職者へアプローチしませんか。</p>
 
       {% module "interview-listing" path="/jinji-stanby/modules/interview-listing.module"
       %}
@@ -24,11 +24,7 @@
       %}
 
     </div>
-      {% module "sidebar" path="/jinji-stanby/modules/sidebar.module"
-        %}
+      {% module "sidebar" path="/stg-jinji-stanby/modules/sidebar.module" %}
   </div>
-  <div class="inner">
-    {% module "stanby-cv" path="/jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
-  </div>
-
+  {% module "stanby-cv" path="/stg-jinji-stanby/modules/stanby-cv", label="stanby-cv", no_wrapper=True %}
 {% endblock body %}

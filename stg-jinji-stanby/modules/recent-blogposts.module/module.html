@@ -4,7 +4,7 @@
 {% for item in module.blogs_to_display.blogs %}
   
   {# Get posts for each blog #}
-  {% set posts_rec = blog_recent_posts(item, 6) %}
+  {% set posts_rec = blog_recent_posts(item, 10) %}
 
   {# Append each post to the all_posts array #}
   {% for post_rec in posts_rec %}
@@ -17,7 +17,7 @@
     <div class="mediaList swiper-wrapper">
       
       {% for post_rec in all_posts_rec|sort(true, false, 'publish_date') %}
-      {% if loop.index < 7 %}
+      {% if loop.index < 11 %}
       <div class="mediaItem swiper-slide">
         <a href="{{ post_rec.absolute_url }}">
 
