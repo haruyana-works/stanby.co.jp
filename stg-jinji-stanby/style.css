@@ -37,6 +37,7 @@ a:hover {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 main {
@@ -155,7 +156,7 @@ button a {
 }
 
 button {
-  transition: .3s;
+  transition: opacity .3s;
 }
 
 button:hover {
@@ -214,12 +215,15 @@ button.headerContactBtn, button.footerContactBtn {
     /* コーディングデザイン確認用 */
     .show {
         visibility: visible;
+        opacity: 1;
     }
 }
 
 @media screen and (max-width: 1100px) {
   nav {
     display: none;
+    opacity: 0;
+    transition: opacity .5s;
   }
 
 }
@@ -797,7 +801,7 @@ button.footerContactBtn a {
 }
 
 .topHeroBtn button a {
-  padding: 9px 20px;
+  padding: 4px 20px 10px;
 }
 
 .topHeroBtn .small {
@@ -2302,7 +2306,7 @@ table {
   }
 
   .topHeroBtn button a {
-    padding: 3px 20px 16px;
+    padding: 3px 15px 16px;
   }
 
   .topCta .topHeroBtn button a {
@@ -2406,7 +2410,7 @@ table {
     max-width: 1186px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 48px 56px;
+    padding: 0 50px 56px;
 }
 
 .blogSLider {
@@ -2906,10 +2910,6 @@ button.sidebarWpBtn {
       display: flex;
       gap: 72px;
       padding-bottom: 0;
-  }
-
-  .sidebarInner {
-    flex: 1;
   }
 
   .blogPoint.topPoint {
