@@ -178,16 +178,16 @@ button.headerWpBtn a, button.headerContactBtn a, button.footerWpBtn a, button.fo
     line-height: 1.0;
 }
 
-button.headerWpBtn {
+button.headerWpBtn,button.footerWpBtn {
   background-color: #fff;
   border: 2px solid #EF671F;
 }
 
-button.headerWpBtn a {
+button.headerWpBtn a, button.footerWpBtn a {
   color: #EF671F;
 }
 
-button.headerContactBtn {
+button.headerContactBtn, button.footerContactBtn {
   background: linear-gradient(#ef971f 0%,#d72777 100%);
 }
 
@@ -270,6 +270,10 @@ button.headerContactBtn {
       max-width: 386px;
       margin-left: 0;
       padding-top: 32px;
+  }
+
+  .navList ul li a {
+    color: #EF671F;
   }
 
   #navToggle{
@@ -431,7 +435,7 @@ footer {
 }
 
 .footerBtnList {
-    padding-top: 32px;
+    padding-top: 28px;
 }
 
 .footerBtnList {
@@ -461,6 +465,14 @@ footer {
 
 .footerBottom ul li a {
     color: #fff;
+}
+
+button.footerWpBtn a {
+  padding: 10px 32px;
+}
+
+button.footerContactBtn a {
+  padding: 10px 26px;
 }
 
 @media screen and (max-width: 1100px) {
